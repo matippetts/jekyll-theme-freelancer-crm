@@ -1,0 +1,115 @@
+---
+layout: contract
+title: Project Proposal
+---
+<section id="scope">
+  <h3>Scope of Work</h3>
+
+  <p>Job No.: #{{ page.job_number }}, {{ page.contract_date }}</p>
+
+  <h2>Project: {{ page.title }}</h2>
+
+  <p>Description: {{ content }}</p>
+</section>
+
+<section id="plan">
+  <h2>Work Plan & Milestones</h2>
+
+  <p>The table below outlines the work process phases, milestones, due dates, deliverables and fees needed to complete this project. This four phase process begins at the concept phase where everything is planned, then the design phase where look and feel (artwork) is produced, next is the technical phase where design is given life, and finally the testing phase where everything is thoroughly tested and reviewed. This process is designed to ensure project efficiency and your complete satisfaction.</p>
+
+  <table id="plan_table">
+    <tr>
+      <th>Phase</th>
+      <th>Concept</th>
+      <th>Design</th>
+      <th>Technical</th>
+      <th>Testing</th>
+    </tr>
+    <tr>
+      <th>Milestone</th>
+      <td>{{ page.concept_milestones }}</td>
+      <td>{{ page.design_milestones }}</td>
+      <td>{{ page.technical_milestones }}</td>
+      <td>{{ page.test_milestones }}</td>
+    </tr>
+    <tr>
+      <th>Due Date</th>
+      <td>{{ page.concept_due_date }}</td>
+      <td>{{ page.design_due_date }}</td>
+      <td>{{ page.technical_due_date }}</td>
+      <td>{{ page.test_due_date }}</td>
+    </tr>
+    <tr>
+      <th>Deliverables</th>
+      <td>{{ page.concept_deliverables }}</td>
+      <td>{{ page.design_deliverables }}</td>
+      <td>{{ page.technical_deliverables }}</td>
+      <td>{{ page.test_deliverables }}</td>
+    </tr>
+    <tr>
+      <th>Fees</th>
+      <td>{{ page.concept_fee }}</td>
+      <td>{{ page.design_fee }}</td>
+      <td>{{ page.technical_fee }}</td>
+      <td>{{ page.test_fee }}</td>
+    </tr>
+    <tr>
+      <td>Total:</td>
+      <td>{{ page.fee_total }}</td>
+    </tr>
+  </table>
+</section>
+
+<section id="expenses">
+  <h2>Detail</h2>
+
+  <p>Thank you for this opportunity. If you have any questions or concerns regarding this project proposal or included terms & conditions, please don't hesitate to call {{ page.your_telephone }}.</p>
+
+  <table id="expenses_table">
+    <tr>
+      <th>Phase</th>
+      <th>Concept</th>
+      <th>Design</th>
+      <th>Technical</th>
+      <th>Testing</th>
+    </tr>
+    <tr>
+      <th>Description</th>
+      <td>{{ page.concept_expenses_list }}</td>
+      <td>{{ page.design_expenses_list }}</td>
+      <td>{{ page.technical_expenses_list }}</td>
+      <td>{{ page.test_expenses_list }}</td>
+    </tr>
+    <tr>
+      <th>Fees</th>
+      <td>{{ page.concept_expenses_fee }}</td>
+      <td>{{ page.design_expenses_fee }}</td>
+      <td>{{ page.technical_expenses_fee }}</td>
+      <td>{{ page.test_expenses_fee }}</td>
+    </tr>
+    <tr>
+      <th>Subtotal:</th>
+      <td>{{ page.expenses_subtotal }}</td>
+    </tr>
+    <tr>
+      <th>Tax:</th>
+      <td>{{ page.expenses_tax_amount }}</td>
+    </tr>
+    <tr>
+      <th>Total:</th>
+      <td>{{ page.expenses_total }}</td>
+    </tr>
+  </table>
+</section>
+
+<section id="terms">
+  <h2>Terms & Conditions</h2>
+
+  <p>All information in this proposal is subject the the following terms and conditions:</p>
+
+</section>
+
+{% capture signature_instructions %}
+Client&amp;s signature below authorizes designer to begin work. If the information and terms in this proposal are to Client&amp;s satisfaction and approval, kindly return a signed copy of this Project Proposal to Designer.
+{% endcapture %}
+{% include signatures.html instructions=signature_instructions %}
