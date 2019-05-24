@@ -2,7 +2,7 @@ repository: matippetts/jekyll-theme-freelancer-crm
 title: Freelancer CRM for Jekyll
 author: Mark Tippetts
 description: Jekyll-based CRM templates for freelancer designers and developers
-remote-theme: jekyll-theme-hacker
+theme: jekyll-theme-hacker
 baseurl: /jekyll-theme-freelancer-crm
 
 plugins:
